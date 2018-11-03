@@ -4,47 +4,72 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zebra Spillet</title>
+    <title>ZEBRA Spillet</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
 
     <div id="screen">
-        <div id="menu_background_1"></div>
-        <div id="menu_background_2"></div>
-        <div id="menu_background_3"></div>
-        <div id="menu_background_4"></div>
+        <div id="background">
+            <div id="menu_background_1"></div>
+            <div id="menu_background_2"></div>
+            <div id="menu_background_3"></div>
+            <div id="menu_background_4"></div>
+        </div>
 
-        <div id="game">
+        <div id="game" class="hide">
             <div id="game_elements">
                 <div id="zebra_ked"></div>
                 <div id="zebra_glad"></div>
-                <div id="giraf"></div>
-                <div id="abe"></div>
-                <div id="elefant"></div>
-                <div id="loeve"></div>
-                <div id="slange"></div>
+
+                <div id="dyr1" class="dyr1 pos1"></div>
+                <div id="dyr2" class="dyr2 pos2"></div>
+
+                <div id="dyr3" class="dyr3 pos3"></div>
+                <div id="dyr4" class="dyr4 pos4"></div>
+                <div id="dyr5" class="dyr5 pos5"></div>
             </div>
 
             <div id="game_ui">
                 <div id="points"></div>
-                <div id="energy"></div>
+                <div id="energy">
+                    <div id="heart1"></div>
+                    <div id="heart2"></div>
+                    <div id="heart3"></div>
+                </div>
                 <div id="time"></div>
             </div>
         </div>
 
-        <div id="start"></div>
-        <div id="settings"></div>
-        <div id="setting_button"></div>
-        <div id="muted"></div>
-        <div id="unmuted"></div>
-        <div id="gameover"></div>
-        <div id="levelcomplete"></div>
-        <div id="play_again"></div>
-        <div id="close"></div>
+        <div id="start" class="hide">
+            <div id="start_title"></div>
+            <div id="play_button" class="pulse"></div>
+            <div id="setting_button"></div>
+            <div id="zebra_glad_1"></div>
+        </div>
+
+        <div id="settings" class="hide">
+            <div id="muted"></div>
+            <div id="unmuted"></div>
+            <div id="muted_1"></div>
+            <div id="unmuted_1"></div>
+            <div id="close_settings"></div>
+        </div>
+
+        <div id="intro" class="hide">
+            <div id="start_intro"></div>
+            <div id="close_intro"></div>
+            <div id="zebra_ked"></div>
+        </div>
+
+        <div id="gameover" class="hide"></div>
+        <div id="levelcomplete" class="hide"></div>
+        <div id="play_again" class="hide"></div>
+        <div id="close_go_start" class="hide"></div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,12 +5,14 @@ body {
 
 #screen {
     position: absolute;
-
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
 }
 
 #game {
     position: relative;
-
+    cursor: pointer;
 }
 
 /**************** SCENEN *****************/
@@ -19,8 +21,8 @@ body {
     background-image: url("Forgrund_1.svg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 100vw;
-    height: 56vw;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     z-index: 4;
 }
@@ -29,8 +31,8 @@ body {
     background-image: url("Forgrund_2.svg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 100vw;
-    height: 56vw;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     z-index: -1;
 }
@@ -39,8 +41,8 @@ body {
     background-image: url("Mellemgrund.svg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 100vw;
-    height: 56vw;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     z-index: -2;
 }
@@ -49,8 +51,8 @@ body {
     background-image: url("Baggrund.svg");
     background-repeat: no-repeat;
     position: absolute;
-    width: 100vw;
-    height: 56vw;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     z-index: -4;
 }
@@ -62,102 +64,131 @@ body {
 }
 
 #zebra_glad {
+    display: none;
     background-image: url("Zebra_glad_Med_striber.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    width: 30vw;
-    height: 40vw;
+    background-size: 100%;
+    width: 24vw;
+    height: 31vw;
     position: absolute;
-    left: 5vw;
-    top: 20vw;
+    left: 2vw;
+    top: 16vw;
     z-index: 2;
 }
 
 
 #zebra_ked {
-    display: none;
-    background-image: url("Zebra_glad_Med_striber.svg");
+    /*display: none*/
+    background-image: url("Zebra_Ked_01.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    width: 30vw;
-    height: 40vw;
+    background-size: 100%;
+    width: 24vw;
+    height: 31vw;
     position: absolute;
-    left: 5vw;
-    top: 20vw;
+    left: 2vw;
+    top: 16vw;
     z-index: 2;
 }
 
 
-#giraf {
+
+.dyr1 {
+    background-image: url("Slange.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 22vw;
+    height: 23vw;
+    position: absolute;
+}
+
+
+.dyr2 {
+    background-image: url("Loeve_Reflected.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25vw;
+    height: 27vw;
+    position: absolute;
+}
+
+
+.dyr3 {
     background-image: url("Giraf_Reflected.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    width: 30vw;
-    height: 30vw;
+    background-size: 100%;
+    width: 28vw;
+    height: 27vw;
     position: absolute;
-    left: 52vw;
-    top: 7vw;
-    z-index: 1;
-
 }
 
-#abe {
+.dyr4 {
     background-image: url("Abe.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    width: 30vw;
-    height: 30vw;
+    background-size: 100%;
+    width: 20vw;
+    height: 18vw;
     position: absolute;
-    left: 77.5vw;
-    top: 10vw;
+}
+
+.dyr5 {
+    background-image: url("Elefant.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25vw;
+    height: 20vw;
+    position: absolute;
+}
+
+/************* FIGURELEMENTER - POSITIONER **************/
+
+.pos1 {
+    left: 31vw;
+    top: 22vw;
     z-index: 2;
 }
 
-#elefant {
-    background-image: url("Elefant.svg");
-    background-repeat: no-repeat;
-    background-size: 69%;
-    width: 30vw;
-    height: 28vw;
-    position: absolute;
+.pos2 {
+    left: 66vw;
+    top: 19vw;
+    z-index: 2;
+}
+
+.pos3 {
+    left: 48vw;
+    top: 5vw;
+    z-index: 1;
+}
+
+.pos4 {
+    left: 80vw;
+    top: 8vw;
+    z-index: 2;
+}
+
+.pos5 {
     left: 22vw;
-    top: 12vw;
+    top: 8vw;
     z-index: -3;
 }
 
-#loeve {
-    background-image: url("Loeve_Reflected.svg");
-    background-repeat: no-repeat;
-    background-size: 80%;
-    width: 30vw;
-    height: 35vw;
-    position: absolute;
-    left: 63vw;
-    top: 20vw;
-    z-index: 2;
-}
+.pos6 {}
 
-#slange {
-    background-image: url("Slange.svg");
-    background-repeat: no-repeat;
-    background-size: 58%;
-    width: 30vw;
-    height: 32vw;
-    position: absolute;
-    left: 39vw;
-    top: 23vw;
-    z-index: 2;
-}
+.pos7 {}
 
+.pos8 {}
 
-/************** UI POINT_LIV_TID ****************/
+.pos9 {}
+
+.pos10 {}
+
+/************** UI POINT /LIV / TID ****************/
 
 #points {
-    background-image: url("Point_boks.svg");
+    background-image: url("Points_boks_.svg");
     background-repeat: no-repeat;
-    background-size: 53%;
-    width: 35vw;
-    height: 15vw;
+    background-size: 100%;
+    width: 21vw;
+    height: 6vw;
     position: absolute;
     left: 3vw;
     top: 48.5vw;
@@ -165,101 +196,244 @@ body {
 }
 
 #energy {
-    background-image: url("Liv_Eksempel.svg");
+    background-image: url("Liv_boks.svg");
     background-repeat: no-repeat;
-    background-size: 75%;
-    width: 35vw;
-    height: 10vw;
+    background-size: 100%;
+    width: 30.5vw;
+    height: 7vw;
     position: absolute;
-    left: 31vw;
+    left: 28.3vw;
     top: 48.5vw;
     z-index: 5;
 }
 
-#time {
-    background-image: url("Tid.svg");
+
+#heart1 {
+    /*display: none;*/
+    width: 6vw;
+    height: 5vw;
+    background-image: url("Hjerte.svg");
     background-repeat: no-repeat;
-    background-size: 86%;
-    width: 35vw;
-    height: 10vw;
     position: absolute;
-    left: 67vw;
+    background-size: 100%;
+    z-index: 6;
+    top: 1vw;
+    left: 9vw;
+}
+
+#heart2 {
+    /*display: none;*/
+    width: 6vw;
+    height: 5vw;
+    background-image: url("Hjerte.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    z-index: 6;
+    top: 1vw;
+    left: 16vw;
+}
+
+#heart3 {
+    /*display: none;*/
+    width: 6vw;
+    height: 5vw;
+    background-image: url("Hjerte.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100%;
+    z-index: 6;
+    top: 1vw;
+    left: 23vw;
+}
+
+#time {
+    background-image: url("Time.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 34vw;
+    height: 7vw;
+    position: absolute;
+    left: 63vw;
     top: 48.5vw;
     z-index: 5;
 }
 
 /**************** UI ELEMENTER *****************/
 
-#start {
-    display: none;
-    background-image: url("Play_button.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 40vw;
-    height: 35vw;
-    position: absolute;
-    left: 50vw;
-    top: 70vw;
-}
-
-#settings {
-    display: none;
-    background-image: url("Setting_Skaerm.svg");
+#start_title {
+    /*display: none;*/
+    background-image: url("Titel_Spil.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 45vw;
     height: 20vw;
     position: absolute;
-    left: 90vw;
-    top: 90vw;
+    left: 30vw;
+    top: 10vw;
+    z-index: 5;
+}
+
+#play_button {
+    /*display: none;*/
+    background-image: url("Play_button.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 12vw;
+    position: absolute;
+    left: 42vw;
+    top: 32vw;
+    z-index: 5;
+}
+
+#zebra_glad_1 {
+    background-image: url("Zebra_glad_Med_striber.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 24vw;
+    height: 31vw;
+    position: absolute;
+    left: 2vw;
+    top: 16vw;
+    z-index: 2;
+}
+
+
+/******************** SETTING *******************/
+
+#settings {
+    /*display: none;*/
+    background-image: url("Indstillinger_Skaerm.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 61vw;
+    height: 42vw;
+    position: absolute;
+    left: 29vw;
+    top: 2.9vw;
+    z-index: 5;
 }
 
 #setting_button {
-    display: none;
-    background-image: url("Setting_Knap.svg");
+    /*display: none;*/
+    background-image: url("Indstillinger_knap.svg");
     background-repeat: no-repeat;
-    background-size: 45%;
-    width: 60vw;
-    height: 20vw;
+    background-size: 100%;
+    width: 22vw;
+    height: 6vw;
     position: absolute;
-    left: 30vw;
-    top: 30vw;
+    left: 76vw;
+    top: 48.3vw;
+    z-index: 6;
 }
 
 #muted {
-    display: none;
+    /*display: none;*/
     background-image: url("Taend_Sluk_Knap_2.svg");
     background-repeat: no-repeat;
-    background-size: 45%;
-    width: 60vw;
-    height: 20vw;
+    background-size: 100%;
+    width: 14vw;
+    height: 7vw;
     position: absolute;
-    left: 30vw;
-    top: 30vw;
+    left: 40vw;
+    top: 15vw;
+    z-index: 6;
 }
 
 #unmuted {
-    display: none;
+    /*display: none;*/
     background-image: url("Taend_Sluk_Knap.svg");
     background-repeat: no-repeat;
-    background-size: 45%;
-    width: 60vw;
-    height: 20vw;
+    background-size: 100%;
+    width: 14vw;
+    height: 7vw;
     position: absolute;
-    left: 30vw;
-    top: 30vw;
+    left: 40vw;
+    top: 15vw;
+    z-index: 6;
 }
+
+#muted_1 {
+    /*display: none;*/
+    background-image: url("Taend_Sluk_Knap_2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 7vw;
+    position: absolute;
+    left: 40vw;
+    top: 25.2vw;
+    z-index: 6;
+}
+
+#unmuted_1 {
+    /* display: none;*/
+    background-image: url("Taend_Sluk_Knap.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 7vw;
+    position: absolute;
+    left: 40vw;
+    top: 25.2vw;
+    z-index: 6;
+}
+
+#close_settings {
+    /*display: none;*/
+    background-image: url("Kryds_Knap.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 8vw;
+    height: 7vw;
+    position: absolute;
+    left: 51.2vw;
+    top: 1.2vw;
+    z-index: 6;
+}
+
+/**************** INTRO FORTÆLLING ***************/
+
+#start_intro {
+    /*display: none;*/
+    background-image: url("Intro_Tekst_Spil.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 67vw;
+    height: 36vw;
+    position: absolute;
+    left: 28vw;
+    top: 5vw;
+    z-index: 6;
+}
+
+#close_intro {
+    /*display: none;*/
+    background-image: url("Kryds_Knap.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 8vw;
+    height: 7vw;
+    position: absolute;
+    left: 85vw;
+    top: 6vw;
+    z-index: 7;
+}
+
+/************** GAMEOVER / LEVELCOMPLETE **********/
 
 #gameover {
     display: none;
     background-image: url("Game_Over.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 70vw;
-    height: 70vw;
+    width: 63vw;
+    height: 43vw;
     position: absolute;
     left: 30vw;
-    top: 30vw;
+    top: 1vw;
+    z-index: 5;
 }
 
 #levelcomplete {
@@ -267,11 +441,12 @@ body {
     background-image: url("Level_Complete.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 70vw;
-    height: 70vw;
+    width: 63vw;
+    height: 43vw;
     position: absolute;
     left: 30vw;
-    top: 30vw;
+    top: 1vw;
+    z-index: 5;
 }
 
 
@@ -279,23 +454,107 @@ body {
     display: none;
     background-image: url("Spil_igen_knap.svg");
     background-repeat: no-repeat;
-    background-size: 45%;
-    width: 60vw;
-    height: 20vw;
+    background-size: 100%;
+    width: 28vw;
+    height: 8vw;
     position: absolute;
-    left: 30vw;
+    left: 47vw;
     top: 30vw;
+    z-index: 6;
 }
 
 
-#close {
+#close_go_start {
     display: none;
-    background-image: url("Spil_igen_knap.svg");
+    background-image: url("Kryds_Knap.svg");
     background-repeat: no-repeat;
-    background-size: 45%;
-    width: 60vw;
-    height: 20vw;
+    background-size: 100%;
+    width: 8vw;
+    height: 7vw;
     position: absolute;
-    left: 30vw;
-    top: 30vw;
+    left: 83vw;
+    top: 2vw;
+    z-index: 6;
+}
+
+/************* ANIMATIONER FOR ELEMENTERNE ***********/
+
+
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.disappear {
+    animation-name: disappear_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier();
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear_kf;
+
+from {
+    transform: scale(1);
+}
+
+to {
+    transform: scale(0);
+}
+
+
+.fade_in {
+    animation-name: none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_out_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
