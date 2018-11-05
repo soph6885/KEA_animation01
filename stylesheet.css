@@ -68,11 +68,11 @@ body {
     background-image: url("Zebra_glad_Med_striber.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 24vw;
-    height: 31vw;
+    width: 23vw;
+    height: 30vw;
     position: absolute;
     left: 2vw;
-    top: 16vw;
+    top: 17vw;
     z-index: 2;
 }
 
@@ -82,11 +82,11 @@ body {
     background-image: url("Zebra_Ked_01.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 24vw;
-    height: 31vw;
+    width: 23vw;
+    height: 30vw;
     position: absolute;
     left: 2vw;
-    top: 16vw;
+    top: 17vw;
     z-index: 2;
 }
 
@@ -96,8 +96,8 @@ body {
     background-image: url("Slange.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 22vw;
-    height: 23vw;
+    width: 19vw;
+    height: 20vw;
     position: absolute;
 }
 
@@ -106,8 +106,8 @@ body {
     background-image: url("Loeve_Reflected.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 25vw;
-    height: 27vw;
+    width: 23vw;
+    height: 25vw;
     position: absolute;
 }
 
@@ -116,8 +116,8 @@ body {
     background-image: url("Giraf_Reflected.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 28vw;
-    height: 27vw;
+    width: 26vw;
+    height: 25vw;
     position: absolute;
 }
 
@@ -142,13 +142,13 @@ body {
 /************* FIGURELEMENTER - POSITIONER **************/
 
 .pos1 {
-    left: 31vw;
+    left: 25vw;
     top: 22vw;
     z-index: 2;
 }
 
 .pos2 {
-    left: 66vw;
+    left: 67vw;
     top: 19vw;
     z-index: 2;
 }
@@ -157,29 +157,42 @@ body {
     left: 48vw;
     top: 5vw;
     z-index: 1;
+    transition: scale(0.9);
 }
 
 .pos4 {
-    left: 80vw;
-    top: 8vw;
-    z-index: 2;
+    left: 76vw;
+    top: 8.5vw;
+    z-index: -3;
+    transform: scale(0.9);
 }
 
 .pos5 {
     left: 22vw;
     top: 8vw;
     z-index: -3;
+    transform: scale(0.9);
 }
 
-.pos6 {}
+.pos6 {
+    left: -3vw;
+    top: 4vw;
+    z-index: -3;
+    transform: scale(0.8);
+}
 
-.pos7 {}
+.pos7 {
+    left: 58vw;
+    top: 4vw;
+    z-index: -4;
+    transform: scale(0.8);
+}
 
-.pos8 {}
-
-.pos9 {}
-
-.pos10 {}
+.pos8 {
+    left: 42vw;
+    top: 23vw;
+    z-index: 2;
+}
 
 /************** UI POINT /LIV / TID ****************/
 
@@ -291,11 +304,11 @@ body {
     background-image: url("Zebra_glad_Med_striber.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 24vw;
-    height: 31vw;
+    width: 23vw;
+    height: 30vw;
     position: absolute;
     left: 2vw;
-    top: 16vw;
+    top: 17vw;
     z-index: 2;
 }
 
@@ -328,20 +341,7 @@ body {
     z-index: 6;
 }
 
-#muted {
-    /*display: none;*/
-    background-image: url("Taend_Sluk_Knap_2.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 14vw;
-    height: 7vw;
-    position: absolute;
-    left: 40vw;
-    top: 15vw;
-    z-index: 6;
-}
-
-#unmuted {
+.on_1 {
     /*display: none;*/
     background-image: url("Taend_Sluk_Knap.svg");
     background-repeat: no-repeat;
@@ -354,9 +354,22 @@ body {
     z-index: 6;
 }
 
-#muted_1 {
+.off_1 {
     /*display: none;*/
     background-image: url("Taend_Sluk_Knap_2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 14vw;
+    height: 7vw;
+    position: absolute;
+    left: 40vw;
+    top: 15vw;
+    z-index: 6;
+}
+
+.on_2 {
+    /*display: none;*/
+    background-image: url("Taend_Sluk_Knap.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 14vw;
@@ -367,9 +380,9 @@ body {
     z-index: 6;
 }
 
-#unmuted_1 {
+.off_2 {
     /* display: none;*/
-    background-image: url("Taend_Sluk_Knap.svg");
+    background-image: url("Taend_Sluk_Knap_2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 14vw;

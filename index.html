@@ -34,9 +34,9 @@
             <div id="game_ui">
                 <div id="points"></div>
                 <div id="energy">
-                    <div id="heart1"></div>
-                    <div id="heart2"></div>
-                    <div id="heart3"></div>
+                    <div id="heart1" class="heart"></div>
+                    <div id="heart2" class="heart"></div>
+                    <div id="heart3" class="heart"></div>
                 </div>
                 <div id="time"></div>
             </div>
@@ -50,10 +50,15 @@
         </div>
 
         <div id="settings" class="hide">
-            <div id="muted"></div>
-            <div id="unmuted"></div>
-            <div id="muted_1"></div>
-            <div id="unmuted_1"></div>
+
+            <div id="setting_music">
+                <div id="music" class="on_1"></div>
+            </div>
+
+            <div id="setting_effect">
+                <div id="sound" class="on_2"></div>
+            </div>
+
             <div id="close_settings"></div>
         </div>
 
@@ -67,7 +72,18 @@
         <div id="levelcomplete" class="hide"></div>
         <div id="play_again" class="hide"></div>
         <div id="close_go_start" class="hide"></div>
+
+
+        <audio src="Bumba_Crossing.mp3" id="music_mp3"></audio>
+        <audio src="zebra_sound.mp3" id="zebra_sound_mp3"></audio>
+        <audio src="slange_sound.mp3" id="slange_sound_mp3"></audio>
+        <audio src="loeve_sound.mp3" id="loeve_sound_mp3"></audio>
+        <audio src="abe_sound.mp3" id="abe_sound_mp3"></audio>
+        <audio src="elefant_sound.mp3" id="elefant_sound_mp3"></audio>
+
     </div>
+
+
 
     <script src="script.js"></script>
 </body>
